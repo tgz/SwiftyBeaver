@@ -15,13 +15,6 @@ public class ConsoleDestination: BaseDestination {
 
     override public var defaultHashValue: Int { return 1 }
 
-    public override init() {
-        super.init()
-
-        // use colored Emojis for better visual distinction
-        // of log level for Xcode 8
-    }
-
     // print to Xcode Console. uses full base class functionality
     override public func send(_ level: SwiftyBeaver.Level, msg: String, thread: String,
         file: String, function: String, line: Int) -> String? {
