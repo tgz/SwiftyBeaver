@@ -106,8 +106,8 @@ class SwiftyBeaverTests: XCTestCase {
         XCTAssertTrue(log.addDestination(file))
         XCTAssertEqual(log.countDestinations(), 3)
         log.verbose("default file msg 1")
-        log.verbose("default file msg 2")
-        log.verbose("default file msg 3")
+        log.warning("default file msg 2")
+        log.error("default file msg 3")
 
         // log to another file
         let file2 = FileDestination()
