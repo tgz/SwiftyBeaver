@@ -51,21 +51,21 @@ open class BaseDestination: Hashable, Equatable {
     open var levelColor = LevelColor()
 
     public struct LevelString {
-        public var verbose = "VERBOSE"
-        public var debug = "DEBUG"
-        public var info = "INFO"
-        public var warning = "WARNING"
-        public var error = "ERROR"
+        public var verbose = "[V]"
+        public var debug = "[D]"
+        public var info = "[I]"
+        public var warning = "[W]"
+        public var error = "[E]"
     }
 
     // For a colored log level word in a logged line
     // empty on default
     public struct LevelColor {
-        public var verbose = ""     // silver
-        public var debug = ""       // green
-        public var info = ""        // blue
-        public var warning = ""     // yellow
-        public var error = ""       // red
+        public var verbose = "📝"     // silver
+        public var debug = "🔰"       // green
+        public var info = "📪"        // blue
+        public var warning = "⚠️"     // yellow
+        public var error = "❌"       // red
     }
 
     var reset = ""

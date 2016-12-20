@@ -112,7 +112,7 @@ public class FileDestination: BaseDestination {
             return false
         }
     }
-    
+
     /// deletes log file.
     /// returns true if file was removed or does not exist, false otherwise
     public func deleteLogFile() -> Bool {

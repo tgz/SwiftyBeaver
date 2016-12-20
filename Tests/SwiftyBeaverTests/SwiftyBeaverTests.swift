@@ -79,6 +79,8 @@ class SwiftyBeaverTests: XCTestCase {
         let log = SwiftyBeaver.self
         // no destination was set, yet
         log.verbose("Where do I log to?")
+        log.verbose("")
+        log.verbose()
     }
 
     func testDestinationIntegration() {
